@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    background-color: #32383e !important;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.6);
+    border-radius: 0.2rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+   
+}
+
+.text{
+    font-weight: 500;
+    line-height: 1.2;
+    color: #adb5bd;
+}
+.badge-ftp {
+    color: #fff;
+    background-color: #4799eb;
+}
+.badge-secondry{
+    background-color: #7a8288;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    transform: translateY(-12%);
+}

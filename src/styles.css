@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #272b30;
+  padding-top: 60px;
+  color: #aaa;
+ 
+}
+
+@font-face {
+  font-family: "Xanh Mono";
+  src: url(./assets/fonts/Xanh_Mono/XanhMono-Italic.ttf) format("truetype");
+}/*# sourceMappingURL=styles.css.map */

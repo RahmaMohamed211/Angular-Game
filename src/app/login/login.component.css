@@ -1,0 +1,41 @@
+.login {
+  background-color: #272b30;
+  height: 100vh;
+}
+
+.w {
+  width: 100%;
+}
+
+.bg {
+  background-color: #32383e;
+}
+
+.w-15 {
+  width: 19%;
+}
+
+button {
+  color: #fff;
+  background-color: #3a3f44;
+  border-color: #22241d;
+}
+
+button:hover {
+  background-color: #4b89c7;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 0.4;
+}
+
+.a2 {
+  color: #4799eb;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}/*# sourceMappingURL=login.component.css.map */

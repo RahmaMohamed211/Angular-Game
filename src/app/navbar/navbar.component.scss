@@ -1,0 +1,31 @@
+.nav{
+    background-color:#272b31;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  
+    
+}
+.logo img{
+    width: 70px;
+    filter: drop-shadow(1px 1px 3px #1983e6ce);
+}
+.logo{
+    font-family: 'Xanh Mono'; 
+  font-weight:400;
+    color: #fff;
+    
+
+}
+.log{
+    color: #fff;
+}
+.login{
+    font-size: 19px;
+    cursor: pointer;
+}
+.signup{
+    color: #4799eb;
+    border-color: #4799eb;
+    height: -moz-fit-content;
+    height: fit-content;
+}

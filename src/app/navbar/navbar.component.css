@@ -1,0 +1,33 @@
+.nav {
+  background-color: #272b31;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.logo img {
+  width: 70px;
+  filter: drop-shadow(1px 1px 3px rgba(25, 131, 230, 0.8078431373));
+}
+
+.logo {
+  font-family: "Xanh Mono";
+  font-weight: 400;
+  color: #fff;
+}
+
+.log {
+  color: #fff;
+}
+
+.login {
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.signup {
+  color: #4799eb;
+  border-color: #4799eb;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+}/*# sourceMappingURL=navbar.component.css.map */

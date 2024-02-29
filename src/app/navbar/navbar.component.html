@@ -1,0 +1,60 @@
+
+<nav class="navbar navbar-expand-lg nav shadow-lg py-2">
+    <div class="container ">
+      <a class="navbar-brand logo " > <img src="../../assets/img/logo (1).png" class="">Game Over</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item " >
+                <a class="nav-link text-white" routerLink="home" *ngIf="login" >Home</a>
+              </li>
+          <li class="nav-item" >
+            <a class="nav-link text-muted" routerLink="all" *ngIf="login">All</a>
+          </li>
+          <li class="nav-item dropdown" >
+            <a class="nav-link dropdown-toggle text-muted" *ngIf="login"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Platforms
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="pc">pc</a></li>
+              <li><a class="dropdown-item" routerLink="browser">browser</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" *ngIf="login">
+            <a class="nav-link dropdown-toggle text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sort by
+            </a>
+            <ul class="dropdown-menu" *ngIf="login">
+              <li><a class="dropdown-item" routerLink="release">release-date</a></li>
+              <li><a class="dropdown-item" routerLink="popularity">popularity</a></li>
+              <li><a class="dropdown-item" routerLink="alph">alphabetical</a></li>
+              <li><a class="dropdown-item" routerLink="relevance">relevance</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" *ngIf="login">
+            <a class="nav-link dropdown-toggle text-muted"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item"  routerLink="recing">racing</a></li>
+              <li><a class="dropdown-item" routerLink="sports">sports</a></li>
+              <li><a class="dropdown-item"  routerLink="social">social</a></li>
+              <li><a class="dropdown-item" routerLink="shooter">shooter</a></li>
+              <li><a class="dropdown-item" routerLink="open">open-world</a></li>
+              <li><a class="dropdown-item" routerLink="zombie">Zombia</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="log d-flex justify-content-center align-items-center" >
+            <a class="login nav-link btn py-2 text-muted px-3 d-flex" routerLink="login" *ngIf="!login">login</a>
+
+            <a class="signup nav-link btn m-auto w-100" routerLink="register" *ngIf="!login">join free</a>
+            
+            <a class="signup nav-link btn m-auto w-100"(click)="logout()"  *ngIf="login"  >Log Out</a>
+        </div>
+     
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,175 @@
+
+.jumbotron {
+    background: url(../../assets/img/paladins.b44d33d6e7ee1ba8.png);
+    background-repeat: no-repeat;
+    background-color: #1c1e22;
+    background-position: top;
+    background-size: contain;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0,0,0,.6);
+    padding: 4rem 2rem;
+}
+.btn-ftg-blue {
+    background-image: linear-gradient(#4799eb,#4799eb 60%,#49acff);
+    background-repeat: no-repeat;
+    filter: none;
+    color: #fff;
+}
+
+.ftg-blue {
+    color: #49acff!important;
+}
+
+.card-body {
+    padding-bottom: 12px;
+}
+
+.badge-ftg {
+    color: #fff;
+    background-color: #4799eb;
+}
+
+a.stretched-link.no-underline {
+    color: #aaa;
+}
+
+.no-underline {
+    text-decoration: none!important;
+}
+
+a {
+    cursor: pointer;
+    outline: 0!important;
+
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.grow:hover{
+    transform: scale(1.03);
+}
+
+.card {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #32383e;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.6);
+    border-radius: 0.25rem;
+}
+
+
+//   loading 
+
+.card.is-loading {
+    .image,
+    h4,
+    p {
+      background: #eee;
+    //   margin: 5px;
+      background: linear-gradient(110deg, #32383E 8%, #485058 18%, #32383E 33%);
+      border-radius: 5px;
+      background-size: 200% 100%;
+      animation: 1.5s shine linear infinite;
+    }
+  
+    .image {
+    //   height: 200px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+
+    
+    }
+  
+    h4 {
+      span{
+        visibility: hidden;
+      }
+    }
+  
+    p {
+        span{
+            visibility: hidden;
+          }
+    }
+  }
+  
+  @keyframes shine {
+    to {
+      background-position-x: -200%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content h1{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #aaa;
+}
+.tex{
+    color: #49acff!important
+}
+.content p{
+    font-size: 1.25rem;
+    font-weight: 300;
+
+}
+h3{
+    color: #aaa;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    background-color: #32383e !important;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.6);
+    border-radius: 0.2rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+   
+}
+
+.text{
+    font-weight: 500;
+    line-height: 1.2;
+    color: #adb5bd;
+}
+.badge-ftp {
+    color: #fff;
+    background-color: #4799eb;
+}
+.badge-secondry{
+    background-color: #7a8288;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    transform: translateY(-12%);
+}

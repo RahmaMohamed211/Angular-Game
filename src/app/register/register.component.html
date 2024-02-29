@@ -1,0 +1,77 @@
+<section class="register">
+    <div class="container py-3 ">
+        <div class="bg">
+            <div *ngIf="registerErrorMessage" class="alert alert-danger">
+           <p>{{registerErrorMessage}}</p>
+            </div>
+            <div class="row ">
+                <div class="col-md-6">
+                    <img src="../../assets/img/gaming.ebaf2ffc84f4451d.jpg" class="w">
+                </div>
+                <div class="col-md-6">
+                    <div class=" p-4 ">
+                        <div class="text-center">
+                            <h4 class="text-muted mb-4">Create My Account!</h4>
+                        </div>
+                        <form (ngSubmit)="registerMethod(regesiterForm)" [formGroup]="regesiterForm" >
+                            <div class=" row">
+                                <div class="col-md-6">          
+                                    <input class="form-control deep-dark w-100   " type="text" formControlName="first_name" placeholder="first_name">
+                                    <div *ngIf="regesiterForm.get('first_name')?.errors && regesiterForm.get('first_name')?.touched">
+                                        <p *ngIf="regesiterForm.get('first_name')?.getError('required')"  class="alert alert-warning py-0"> name is required</p>
+                                        <p *ngIf="regesiterForm.get('first_name')?.getError('minlength')"  class="alert alert-warning py-0"> Name length must be between 3 to 30 character</p>
+                                        <p *ngIf="regesiterForm.get('first_name')?.getError('maxlength')"  class="alert alert-warning py-0">Special chars not allowed</p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">          
+                                        <input class="form-control deep-dark w-100   " type="text" formControlName="last_name" placeholder="last_name">
+                                        <div *ngIf="regesiterForm.get('last_name')?.errors && regesiterForm.get('first_name')?.touched">
+                                            <p *ngIf="regesiterForm.get('last_name')?.getError('required')"  class="alert alert-warning py-0"> name is required</p>
+                                            <p *ngIf="regesiterForm.get('last_name')?.getError('minlength')"  class="alert alert-warning py-0"> Name length must be between 3 to 30 character</p>
+                                            <p *ngIf="regesiterForm.get('last_name')?.getError('maxlength')"  class="alert alert-warning py-0">Special chars not allowed</p>
+                                           </div>
+                                        </div>
+                      
+                            </div>
+                            <div class="">
+                                <input class="form-control my-3 deep-dark " type="email" formControlName="email" placeholder="Email Address">
+                                <div *ngIf="regesiterForm.get('email')?.errors && regesiterForm.get('email')?.touched">
+                                 <p *ngIf="regesiterForm.get('email')?.getError('required')"  class="alert alert-warning py-0"> Email is Required</p>
+                                <p *ngIf="regesiterForm.get('email')?.getError('email')"  class="alert alert-warning py-0">the email is vaild</p>
+                                   </div>
+                            </div>
+                            <div class="">
+                                <input class="form-control my-3 deep-dark " formControlName="age" type="number" placeholder="age">
+                                <div *ngIf="regesiterForm.get('age')?.errors && regesiterForm.get('age')?.touched">
+                                    <p *ngIf="regesiterForm.get('age')?.getError('required')"  class="alert alert-warning py-0">phone is required</p>
+                                    <p *ngIf="regesiterForm.get('age')?.getError('min')"  class="alert alert-warning py-0">phone is not requried</p>
+                                   
+                           
+                                   </div>
+                            </div>
+                     <div class=""> 
+                        <input class="form-control my-3 deep-dark" formControlName="password" type="password" placeholder="password">
+                        <div *ngIf="regesiterForm.get('password')?.errors && regesiterForm.get('password')?.touched">
+                            <p *ngIf="regesiterForm.get('password')?.getError('required')"  class="alert alert-warning py-0">password is required</p>
+                            <p *ngIf="regesiterForm.get('password')?.getError('pattern')"  class="alert alert-warning py-0">Min length is 8 characters</p>
+                         
+                   
+                           </div>
+                    </div>
+                  
+                          
+                           <button class="btn w-100 py-2"  [disabled]="regesiterForm.invalid">Create Account</button>
+                           <hr>
+                          
+                           <div class="text-center">
+                            <span class="small text-muted" >Already a member?</span>
+                            <a class="a2 small" routerLink="/login"> Log In></a>
+                           </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</section>

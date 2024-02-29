@@ -1,0 +1,51 @@
+<section class="login">
+    <div class="container py-5 ">
+        <div class="bg">
+            <div *ngIf="loginErrorMessage" class="alert alert-danger">
+                <p>{{loginErrorMessage}}</p>
+                 </div>
+            <div class="row ">
+                <div class="col-md-6">
+                    <img src="../../assets/img/gaming.ebaf2ffc84f4451d.jpg" class="w">
+                </div>
+                <div class="col-md-6">
+                    <div class=" p-3 ">
+                        <div class="text-center">
+                            <img src="../../assets/img/logo (1).png" class="w-15 mb-3">
+                            <h4 class="text-muted mb-4">Log in to GameOver</h4>
+                        </div>
+                        <form (ngSubmit)="loginMethod(loginForm)" [formGroup]="loginForm">
+                            <div class="form-Group"> 
+                                    <input class="form-control my-3 " type="email" placeholder="Email" formControlName="email">
+                                    <div *ngIf="loginForm.get('email')?.errors && loginForm.get('email')?.touched">
+                                        <p *ngIf="loginForm.get('email')?.getError('required')"  class="alert alert-warning py-0"> Email is Required</p>
+                                       <p *ngIf="loginForm.get('email')?.getError('email')"  class="alert alert-warning py-0">the email is vaild</p>
+                                          </div>
+                                </div>
+                       <div class="form-Group"> 
+                         <input class="form-control my-3" type="password" placeholder="password" formControlName="password">
+                         <div *ngIf="loginForm.get('password')?.errors && loginForm.get('password')?.touched">
+                            <p *ngIf="loginForm.get('password')?.getError('required')"  class="alert alert-warning py-0">password is required</p>
+                            <p *ngIf="loginForm.get('password')?.getError('pattern')"  class="alert alert-warning py-0">Min length is 8 characters</p>
+                         
+                   
+                           </div>
+                    </div>
+                         
+                           <button class="btn w-100 py-2"  [disabled]="loginForm.invalid">login</button>
+                           <hr>
+                           <div class="text-center">
+                            <a class="small a2 ">Forgot Password?</a>
+                           </div>
+                           <div class="text-center">
+                            <span class="small text-muted">Not a member yet?</span>
+                            <a class="a2 small"> Create Account></a>
+                           </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</section>
